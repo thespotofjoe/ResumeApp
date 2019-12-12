@@ -38,6 +38,7 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="Mp7-m2-hBE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,10 +153,19 @@
         <!--Item-->
         <scene sceneID="GCM-Kj-cRE">
             <objects>
-                <viewController id="NSi-PY-FBK" sceneMemberID="viewController">
+                <viewController id="NSi-PY-FBK" customClass="LetsTalkMailMeViewController" customModule="Resume" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4LF-Ga-mJl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4m-qB-W6K">
+                                <rect key="frame" x="86" y="158" width="203" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="9pv-A4-QxB" kind="show" identifier="doneWithMailSegue" id="aPB-1g-aPw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HGA-ve-1Wd"/>
                     </view>
@@ -241,4 +251,7 @@
         <image name="TheSpotofJoe-Closer" width="211.33332824707031" height="211.33332824707031"/>
         <image name="first" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="u7Y-xg-7CH"/>
+    </inferredMetricsTieBreakers>
 </document>
